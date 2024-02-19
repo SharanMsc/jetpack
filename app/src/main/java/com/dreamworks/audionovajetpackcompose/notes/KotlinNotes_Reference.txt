@@ -1,0 +1,59 @@
+
+Reference
+-------------
+A reference is like a pointer to the memory.
+When object is created from a class, Java allocates enough memory for object.
+When object is assigned to a variable, the variable gets value of the reference to the object,
+but not the object itself.
+
+Application allocate memory from the os in the form of stack
+Kotlin stores all variable in memory twice, in the stack and then the heap
+stack store reference and heap store object
+
+
+
+Types
+--------------
+4 types - strong,week,soft,phantom
+Strong
+--------
+Ordinary reference in java.
+Any time create a new object a strong reference created by default
+Eg: MyObject object = new MyObject();
+it will prevent the garbage collector of picking it and destroy it
+it some time cause memory leak(
+Memory leaks is the situation when
+there are objects present in the heap that are no longer used
+and garbage collector can't remove them from the memory.
+Memory leak blocks memory resources and degrade system performance
+
+Common Cause:
+holding the reference of activity or context in a long term running
+background process
+registering listeners without unregistering them
+creating static reference to an object
+
+)
+Week
+-----
+it's a reference that is not strong enough to keep the object into memory.
+it allow the garbage collector to picking it and destroy it
+it is one of the solution for memory leak
+Eg: private WeakReference<MainActivity> mainActivity; this.mainActivity = new WeakReference<>(mainActivity);
+
+Soft
+----
+Its a stronger week reference
+The week reference are immediately collected by gc,
+while soft reference beg the gc to stay in memory unless there is no option
+soft reference are useful for creation of cache
+
+Phantom
+-------
+The object is reference through a phantom reference,
+the gc can collect them whenever want
+
+https://www.ictdemy.com/kotlin/basics
+
+
+

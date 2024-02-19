@@ -1,0 +1,10 @@
+Room
+-----
+Room is sqlite database library.
+That simplifies database management in android apps.
+It provide compile time verification of sql queries
+and abstracts many of the  low level of sql operations.
+Together live data and room improve app development,
+by promoting clean, maintainable, testable architecture,
+reducing boilerplate code and enhancing data synchronization
+between ui and data source

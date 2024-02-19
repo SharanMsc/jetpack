@@ -1,0 +1,32 @@
+ViewModel
+---------
+Its a class used to store and manage ui related data
+in a life cycle conscious way.
+
+Any kind of configuration changes in application tend
+to recreation of whole activity of the application.
+
+It means data will be lost if it has been not saved and
+restored from the activity which was destroyed.
+
+To avoid this keep all Ui data to the viewModel instead of
+activity.
+
+It separate the ui logic from the ui component
+
+Reduce memory leak and making data available to the different
+components
+
+Eg: Class A:ViewModel()
+Dependency
+implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:lifeCycle-version"
+implementation "androidx.lifecycle:lifecycle-livedata-ktx:lifeCycle-version"
+implementation "androidx.lifecycle:lifecycle-runtime-ktx:lifeCycle-version"
+implementation "androidx.core:core-ktx:lifeCycle-version"
+
+Plugin
+apply plugin : "kotlin-android"
+apply plugin ; "kotlin-android-extension"
+
+Initialization
+val ViewModel = ViewModelProvider(this).get(ViewModelClass::class.java)

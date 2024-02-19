@@ -1,0 +1,28 @@
+LiveData
+---------
+Its an observable data holder class
+Observable means livedata can be observed by other
+components like activity or fragment
+Live data has the knowledge about the lifecycle of
+its observers like activity or fragment
+live data only update the observers which are in its
+active lifecycle
+
+Eg:
+private val data = MutableLiveData<Int>()
+
+ viewModel.finished().observe(this, Observer {
+            if(it){
+                // if count time finished it set the value
+                textView.text = "Finished"
+            }
+        })
+
+Advantage
+No need to update the ui everytime
+Live data notify observer if any change occurs
+
+No memory leaks
+Observers are bound to lifecycle objects
+and clean up after themselves
+when their associate lifecycle destroyed

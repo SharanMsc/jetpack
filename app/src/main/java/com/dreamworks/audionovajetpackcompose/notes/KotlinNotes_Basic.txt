@@ -1,0 +1,21 @@
+Kotlin
+-------
+Advantages
+concise syntax
+enhanced null safety
+readability
+kotlin type infer reduce the boiler plate code
+it interoperate with java to allowing programmers
+to adapt existing project
+
+Boiler plate
+It is a unit of code that appear repeatedly
+
+val & var
+Both val and var used for variable declaration.
+val declare read only variable and its value cant
+change after initialization
+var declare immutable variable means its value can
+be reassigned
+Its good practice of using val whenever possible
+that reduce bug

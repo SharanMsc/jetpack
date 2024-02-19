@@ -1,0 +1,28 @@
+Activity lifecycle
+
+onCreate
+Calls when the activity first created.
+Here all the static work like creating views, binding data to list ets
+it provide bundle that contain the previous frozen state
+onStart
+Invoked when activity visible to user
+It is followed by the onResume if the activity invoked from the background
+It invoked after onCreate
+onRestart
+It invoked after the activity has been stopped and prior to its starting stage,
+thus always followed by the onStart when activity revived from background
+onResume
+It invoked when the activity start interact with the user
+onPause
+It invoked when activity is going to background and has not yet been killed
+onStop
+It invoke activity is not visible to user
+onDestroy
+it is the final call receive before the activity destroyed
+
+To handle configuration change to use technique such as
+retaining fragment with setRetainInstance(true) to preserve the critical data
+during configuration changes
+And also use ViewModel to store Ui related data
+
+

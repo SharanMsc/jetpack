@@ -1,0 +1,57 @@
+Dependency Injection
+--------------------
+Dependency occurs when an object from one class
+require an object from another class inorder function
+properly.
+
+Eg:
+class MovieTheatre(){
+    var screen:Screen
+    var projector:Projector
+    var movie:Movie
+
+    init{
+        screen = Screen()
+        projector  = Projector()
+        movie = Movie()
+    }
+
+    fun playMovie(){
+         println("Movie playing")
+    }
+}
+
+here MovieTheatre initialize its dependencies which,
+include Screen,Projector,Movie.
+In another word MovieTheatre depend on these object
+to function.
+
+dependencies problems
+---------------------
+
+When initialize a class dependencies in its init,
+create a situation where the class is tightly coupled
+with its dependencies.
+In tightly coupling class and its dependencies are
+strong, so if any change in fail or error in dependency
+down entire functionality
+
+dependency injection
+Pass dependency from an external source rather than creating
+with in a class, this process is called dependency injection.
+The most common way to inject dependencies is through the
+constructor
+
+class MovieTheatre(val screen: Screen, val projector: Projector, val movie: Movie) {
+
+  fun playMovie() {
+    System.out.println("Playing movie now")
+  }
+}
+
+Dependency injection framework
+-------------------------------
+For more complex dependency in a project,
+you can use dependency framework such as koin,
+dagger2, to generate boilerplate dependency injection
+code

@@ -1,0 +1,35 @@
+Fragments
+---------
+Its a modular component that represent the part of an activity ui
+has its own lifecycle
+onAttach -
+first method call only once the entire life cycle
+onCreate -
+used to initialize all attribute and components of fragments
+onCreateView -
+this method used to create fragment ui.
+It return fragment root as the view component
+that is used to draw ui
+onViewCreated
+it calls when the activity of fragment created
+onStart
+it calls when fragment visible on device
+onResume
+it calls when visible fragment interactive
+onPause
+it indicate user leaving the fragment
+system cals this method to commit fragment changes
+onStop
+Method to terminate functions and visibility of fragment
+onDestroyView
+it call to clean up all kinds of resources
+as well as view hierarchy associated with fragment.
+it calls when attach new fragment and destroy existing fragment
+onDestroy
+its calls when clean all fragment state and lifecycle
+onDetached
+it calls to disassociate fragment from activity
+
+Used to create more modular and reusable Ui components
+It is used when a portion of ui that can be added, removed, or replaced within an activity
+used for building responsive ui

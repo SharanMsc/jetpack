@@ -1,0 +1,18 @@
+Network Request Libraries
+-------------------------
+To make network request  using two libraries
+in android are retrofit and okhttp
+
+Retrofit
+its a popular choice for building typ-safe restful apis.
+It simplify the process of making network calls by converting
+json response into java/kotlin objects
+
+Okhttp
+it is a low level http client for making network requests.
+Its used in conjunction with retrofit
+
+Additionally android provide classes like AsyncTask,
+HttpRlConnection, and volley for making network requests.
+But these are less recommended due to their limitations and
+complexities

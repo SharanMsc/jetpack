@@ -1,0 +1,11 @@
+DataBinding
+------------
+Its an android library allow to bind ui
+components directly to data source like
+view-model objects
+It simplify the ui development by eliminating
+the boilerplate code to update the ui component
+programmatically
+The frame work handle automatically when any
+changes happened
+it avoid the risk of bugs and make codebase clear maintain code
